@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Developer Fahim" />
+    <meta name="description"
+        content="HTML Tag Generator from Folder - Easily generate HTML tags from your files (CSS, JS, images, videos). Just upload a folder and copy tags instantly!" />
+    <meta name="keywords"
+        content="HTML tag generator, folder to HTML, convert folder to HTML, CSS link generator, JS script tag, image embed, Developer Fahim" />
+    <meta property="og:title" content="🔥 HTML Tag Generator from Folder" />
+    <meta property="og:description"
+        content="Generate HTML tags instantly from files in a folder. Drag & drop, filter, and copy tags with one click!" />
+    <meta property="og:url" content="https://developer-fahim.github.io/HTML-Tag-Generator-from-Folder" />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://developer-fahim.github.io/HTML-Tag-Generator-from-Folder" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>🔥 HTML Tag Generator from Folder | Developer Fahim</title>
+
+    <!-- ✅ Schema.org JSON-LD for WebApplication -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "HTML Tag Generator from Folder",
+        "url": "https://developer-fahim.github.io/HTML-Tag-Generator-from-Folder",
+        "applicationCategory": "DeveloperToolsApplication",
+        "operatingSystem": "All",
+        "description": "A tool that generates HTML tags for CSS, JS, images, and video files from a selected folder.",
+        "author": {
+            "@type": "Person",
+            "name": "Developer Fahim",
+            "url": "https://facebook.com/developerfahim"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Developer Fahim"
+        },
+        "inLanguage": "en",
+        "screenshot": "https://developer-fahim.github.io/HTML-Tag-Generator-from-Folder/assets/screenshot.png",
+        "codeRepository": "https://github.com/developer-fahim/HTML-Tag-Generator-from-Folder",
+        "license": "https://opensource.org/licenses/MIT"
+    }
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EPNBB3ET19"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-EPNBB3ET19');
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>🔥 HTML Tag Generator from Folder</h1>
+        <p>Easily generate clean HTML tags for all files inside a folder – images, stylesheets, scripts, and videos.</p>
+    </header>
+
+    <main>
+        <section class="instructions" aria-labelledby="usage-instructions">
+            <h2 id="usage-instructions">📘 How to Use</h2>
+            <ol>
+                <li>Select a folder using the input or drag & drop it.</li>
+                <li>Use the buttons to filter HTML tags by file type (CSS, JS, images, etc).</li>
+                <li>Click a file in the folder tree to preview its HTML tag.</li>
+                <li><strong>CTRL+Click</strong> a file to preview it (if supported).</li>
+                <li>Click "Copy All" to copy generated tags to clipboard.</li>
+            </ol>
+        </section>
+
+        <section id="dropArea" aria-label="Folder Upload Area">
+            <p>📂 Drag & Drop a folder or choose manually</p>
+            <input type="file" id="folderInput" webkitdirectory multiple aria-label="Select folder" />
+        </section>
+
+        <nav class="btn-group" aria-label="Tag Filters">
+            <button onclick="filterFiles('css')">🎨 CSS Tags</button>
+            <button onclick="filterFiles('js')">⚙️ JS Tags</button>
+            <button onclick="filterFiles('scss')">⚙️ SCSS Tags</button>
+            <button onclick="filterFiles('img')">🖼️ Image Tags</button>
+            <button onclick="filterFiles('video')">📹 Video Tags</button>
+            <button onclick="filterFiles('all')">📂 Show All</button>
+            <button onclick="copyToClipboard()">📋 Copy All</button>
+            <button onclick="toggleTree()">📁 Show/Hide Folder Tree</button>
+        </nav>
+
+        <section id="treeView" class="instructions" aria-label="Folder Tree View"></section>
+        <section id="outputBox" aria-label="Generated HTML Tags"></section>
+    </main>
+
+    <footer class="footer">
+        Made with ❤️ by <a href="https://facebook.com/developerfahim" target="_blank"
+            rel="noopener noreferrer">Developer Fahim</a> |
+        <a href="https://github.com/developer-fahim" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
