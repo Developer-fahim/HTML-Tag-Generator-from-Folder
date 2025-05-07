@@ -62,9 +62,8 @@
     function generateTag(path) {
         const ext = path.split('.').pop().toLowerCase();
         if (ext === 'css' || ext === 'scss') return '<link rel="stylesheet" href="' + path + '">';
-        if (ext === 'js') return '<s src="' + path + '"><\/script>';
-        if (["png", "jpg", "jpeg", "webp", "gif", "svg"].includes(ext)) return '<img src="' + path + '" alt="' + path +
-            '">';
+        if (ext === 'js') return '<script src="' + path + '"><\/script>';
+        if (["png", "jpg", "jpeg", "webp", "gif", "svg"].includes(ext)) return '<img src="' + path + '" alt="">';
         if (["mp4", "webm", "ogg"].includes(ext)) return '<video controls><source src="' + path + '" type="video/' +
             ext + '"></video>';
         return '';
