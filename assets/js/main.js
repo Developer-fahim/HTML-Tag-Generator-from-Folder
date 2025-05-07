@@ -156,7 +156,7 @@
                     break;
                 }
             }
-            if ((type === 'all' || type === 'other') && !found) {
+            if ((type === 'all') && !found) {
                 grouped.other.push(allGeneratedTags[path]);
             }
         }
